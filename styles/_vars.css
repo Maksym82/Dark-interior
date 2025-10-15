@@ -18,16 +18,12 @@
 
 .light {
   --body-bg: #f5f5f5;
-  --body-color: #171717;
-  --heading-color: #333;
-  --secondary-color: #8a8a8a;
+  --body-color: #1E1F24;
 }
 
 .dark {
-  --body-bg: #171717;
-  --body-color: #f5f5f5;
-  --heading-color: #ddd;
-  --secondary-color: #757575;
+  --body-bg: #1E1F24;
+  --body-color: #fff;
 }
 
 html {
