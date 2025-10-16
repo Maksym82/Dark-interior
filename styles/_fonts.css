@@ -68,3 +68,8 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'icon-font';
+  src: url('../assets/fonts/fontello.woff2');
+}
+

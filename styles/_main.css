@@ -6,6 +6,7 @@
   height: var(--top-line-height);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -24,9 +25,21 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  padding-right: 5px;
 }
 
 .main-menu ul {
+  padding-right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity .3s ease, transform .3s ease, visibility .3s ease;
+}
+
+.main-menu ul.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .main-menu li {
@@ -41,9 +54,56 @@
   padding: 30px;
   text-decoration: none;
   color: #7a7b7f;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .main-menu a:hover {
-    color: var(--active-color);
+  color: var(--active-color);
+}
+
+.main-menu li.active a {
+  color: var(--active-color);
+}
+
+.menu-btn {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: -10px;
+}
+
+.menu-btn * {
+  width: 17px;
+  height: 2px;
+  background-color: var(--menu-btn-color);
+}
+
+.menu-btn.active {
+  align-items: end;
+}
+
+.menu-btn *:first-child {
+  width: 13px;  
+} 
+
+.menu-btn *:nth-child(2) {
+  width: 11px;  
+} 
+
+.toggler {
+  position: relative;
+  right: 16px;
+}
+
+[class^='icon-font-'] {
+  font-style: normal;
+  font-family: icon-font;
+  cursor: pointer;
+  color: var(--menu-btn-color);
+}
+
+.icon-font-light::before {
+  content: '\E801';
 }
