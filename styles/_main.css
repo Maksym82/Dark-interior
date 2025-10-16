@@ -32,7 +32,7 @@
   padding-right: 0;
   visibility: hidden;
   opacity: 0;
-  transform: translateX(10px);
+  transform: translateX(20px);
   transition: opacity .3s ease, transform .3s ease, visibility .3s ease;
 }
 
@@ -51,7 +51,7 @@
 
 .main-menu a {
   display: block;
-  padding: 30px;
+  padding: 5px 30px;
   text-decoration: none;
   color: #7a7b7f;
   transition: color 0.3s ease;
