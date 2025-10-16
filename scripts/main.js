@@ -1,4 +1,6 @@
-import { themeSwitcher } from '../vendor/theme-switcher/theme-switcher.js'
+import { c } from '../vendor/swiper/shared/utils.min.mjs';
+import Swiper from '../vendor/swiper/swiper-bundle.min.mjs';
+import { themeSwitcher } from '../vendor/theme-switcher/theme-switcher.js';
 new themeSwitcher()
 
 const menuBtn = document.querySelector('.menu-btn');
@@ -9,4 +11,10 @@ menuBtn.addEventListener('click', function() {
     menu.classList.toggle('active')
 })
 
-// document.body.hidden = true // test
+const swiper = new Swiper('.head-slider', {
+    effect: 'slide',
+    speed: 1000,
+    loop: true,
+    slidesPerView: 3,
+    
+})

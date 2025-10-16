@@ -2,6 +2,7 @@
 
 @import url('../vendor/global-reset/global-reset.css');
 @import url('../vendor/grid-system/grid-system.css');
+@import url('../vendor/swiper/swiper-bundle.min.css');
 
 @import url('./_fonts.css');
 @import url('./_main.css');
