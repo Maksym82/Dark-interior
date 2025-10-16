@@ -108,6 +108,10 @@
   content: "\E801";
 }
 
+.head-wrapper {
+  padding: var(--slider-padding);
+}
+
 .head-slider__style {
   font-size: 2rem;
   font-weight: 600;
@@ -142,4 +146,11 @@
 
 .head-slider__image {
   height: 100%; 
+}
+
+.head-slider__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }

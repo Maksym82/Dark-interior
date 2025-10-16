@@ -16,5 +16,5 @@ const swiper = new Swiper('.head-slider', {
     speed: 1000,
     loop: true,
     slidesPerView: 3,
-    
+    spaceBetween: 30,
 })
