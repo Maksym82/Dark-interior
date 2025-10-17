@@ -1,4 +1,4 @@
-import { c } from "../vendor/swiper/shared/utils.min.mjs";
+import { c, f } from "../vendor/swiper/shared/utils.min.mjs";
 import Swiper from "../vendor/swiper/swiper-bundle.min.mjs";
 import { themeSwitcher } from "../vendor/theme-switcher/theme-switcher.js";
 new themeSwitcher();
@@ -22,4 +22,24 @@ const swiper = new Swiper(".head-slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  on: {
+    init: function () {
+      updateSlideCounter(this);
+    },
+    slideChange: function () {
+      updateSlideCounter(this);
+    },
+  },
 });
+
+function updateSlideCounter(swiperInstance) {
+  const realIndex = swiperInstance.realIndex + 1;
+  const totalSlides = swiperInstance.slides.length;
+  const counterElement = document.querySelector(".slider-bottom__count .value");
+
+  if (counterElement) {
+    counterElement.textContent = `${realIndex} / ${totalSlides}`;
+  } else {
+    console.warn("Элемент .slider-bottom__count .value не найден");
+  }
+}
