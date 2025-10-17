@@ -17,12 +17,25 @@
 
 /* sm <= Medium (md) */
 @media (max-width : 767.98px) {
-
+    .head-slider .swiper-slide {
+        transform: scale(1);
+        opacity: .5;
+    }
 }
 
 /* xs <= Small (sm) */
 @media (max-width : 575.98px) {
+    .main-menu ul {
+        max-width: 155px;
+    }
 
+    .main-menu a {
+        padding: 0 10px;
+    }
+
+    .head-slider {
+        right: -8%;
+    }
 }
 
 
