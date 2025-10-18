@@ -19,7 +19,7 @@
 @media (max-width : 767.98px) {
     .head-slider .swiper-slide {
         transform: scale(1);
-        opacity: .5;
+        opacity: .8;
     }
 }
 

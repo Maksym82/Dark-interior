@@ -27,7 +27,7 @@ const swiper = new Swiper(".head-slider", {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 10,
     },
   },
   on: {

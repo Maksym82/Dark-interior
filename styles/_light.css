@@ -18,4 +18,6 @@
   content: '\E802';
 }
 
-.light 
+.light .head-slider__header {
+  color: var(--body-color);
+}
