@@ -6,13 +6,20 @@
     <title>Dark Interior</title>
     <meta name="description" content="Starter Description" />
     <!-- Favicon -->
-    <link
-      rel="icon"
-      href="./favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <script>
+      const base =
+        location.hostname === "127.0.0.1" || location.hostname === "localhost"
+          ? ""
+          : "/Dark-interior";
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = `${base}/styles/index.css`;
+      document.head.appendChild(link);
+    </script>
+
     <!-- Styles -->
-    <link rel="stylesheet" href="/Dark-interior/styles/index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
   <body>
