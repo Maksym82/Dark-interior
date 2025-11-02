@@ -1,4 +1,3 @@
-import { c, f } from "../vendor/swiper/shared/utils.min.mjs";
 import Swiper from "../vendor/swiper/swiper-bundle.min.mjs";
 import { themeSwitcher } from "../vendor/theme-switcher/theme-switcher.js";
 new themeSwitcher();
